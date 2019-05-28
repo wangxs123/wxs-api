@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author wxs
- * @data
+ * @data 2019-05-28 10:00
  */
 @SpringBootApplication
 public class WxsApiApplication {
