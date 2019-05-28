@@ -1,1 +1,18 @@
+spring:
+  profiles:
+    active: dev
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Hongkong
+server:
+  port: 8086
+  servlet:
+    context-path: /wxs-api
+mybatis:
+  mapper-locations: classpath:mapping/*/*.xml
+  config-location: classpath:mybatis-config.xml
+logging:
+  config: classpath:logback-spring.xml
+
+
 
