@@ -8,7 +8,7 @@
         <version>2.1.5.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com</groupId>
+    <groupId>com.wxs.api</groupId>
     <artifactId>dubbo-service</artifactId>
     <version>0.0.1</version>
     <name>dubbo-service</name>
@@ -168,7 +168,7 @@
             <version>1.0.3</version>
         </dependency>
         <dependency>
-            <groupId>wxs</groupId>
+            <groupId>wxs.api.common</groupId>
             <artifactId>dubbo-common</artifactId>
             <version>1.0.0</version>
         </dependency>
