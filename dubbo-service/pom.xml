@@ -28,7 +28,7 @@
         <!--dubbox版本号-->
         <dubbox.version>2.6.5</dubbox.version>
         <!--zookeeper版本号-->
-        <zookeeper.version>3.4.11</zookeeper.version>
+        <zookeeper.version>3.4.14</zookeeper.version>
         <!--zkClient版本号-->
         <zkclient.version>0.1</zkclient.version>
         <!--package 跳过测试-->
