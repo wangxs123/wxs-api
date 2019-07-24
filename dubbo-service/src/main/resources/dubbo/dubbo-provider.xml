@@ -5,20 +5,25 @@
        http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <!-- 提供方应用信息，用于计算依赖关系 -->
-    <dubbo:application name="${dubbo.application.name}"/>
+    <dubbo:application name="provider"/>
 
     <!--zookeeper配置-->
-    <dubbo:registry protocol="${dubbo.registry.protocol}" address="${dubbo.registry.address}"
-                    group="${dubbo.registry.group}" client="${dubbo.registry.client}"
-                    timeout="${dubbo.registry.timeout}" check="${dubbo.registry.check}"/>
+    <!--<dubbo:registry protocol="${dubbo.registry.protocol}" address="zookeeper://127.0.0.1:2181"-->
+                    <!--group="${dubbo.registry.group}" client="${dubbo.registry.client}"-->
+                    <!--timeout="${dubbo.registry.timeout}" check="${dubbo.registry.check}"/>-->
+    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
 
     <!-- dubbo协议配置 -->
-    <dubbo:protocol name="${dubbo.protocol.name}" port="${dubbo.protocol.port}" serialization="${dubbo.serialization}"/>
+    <!--<dubbo:protocol name="${dubbo.protocol.name}" port="${dubbo.protocol.port}" serialization="${dubbo.serialization}"/>-->
+    <dubbo:protocol name="dubbo"/>
 
     <!-- dubbo注解扫描包名 -->
-    <dubbo:annotation package="com.service.service"/>
+    <dubbo:annotation package="com.service"/>
+    <!--<bean id="userServiceImpls" class="com.service.service.impl.UserServiceImpl"/>-->
 
     <!-- 延迟到Spring初始化完成后，再暴露服务,服务调用超时设置为30秒,超时不重试-->
-    <dubbo:provider delay="-1" timeout="30000" retries="0" threadpool="fixed" threads="1000" accepts="1200"/>
+    <!--<dubbo:provider delay="-1" timeout="30000" retries="0" threadpool="fixed" threads="1000" accepts="1200"/>-->
+    <!--<dubbo:service interface="common.service.UserService"-->
+                   <!--ref="userServiceImpls" protocol="dubbo" timeout="5000"/>-->
 
 </beans>

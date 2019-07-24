@@ -1,11 +1,13 @@
 spring:
+  application:
+    name: wxs api
   profiles:
     active: dev
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: Hongkong
 server:
-  port: 8086
+  port: 8087
   servlet:
     context-path: /wxs-api
 mybatis:

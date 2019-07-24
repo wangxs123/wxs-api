@@ -1,10 +1,10 @@
 package com.service.service.impl;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.service.mapper.userinfo.UserInfoMapper;
 import common.entity.UserEntity;
 import common.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -13,7 +13,6 @@ import java.util.List;
  * @date 2019/5/30 15:01
  **/
 @Service
-@com.alibaba.dubbo.config.annotation.Service(version = "1.0.0")
 public class UserServiceImpl implements UserService {
 
     @Autowired
