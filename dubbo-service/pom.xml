@@ -26,7 +26,7 @@
         <!--pageHelper版本号-->
         <pageHelper.version>1.2.3</pageHelper.version>
         <!--dubbox版本号-->
-        <dubbox.version>2.6.5</dubbox.version>
+        <dubbox.version>2.6.9</dubbox.version>
         <!--zookeeper版本号-->
         <zookeeper.version>3.4.14</zookeeper.version>
         <!--zkClient版本号-->
